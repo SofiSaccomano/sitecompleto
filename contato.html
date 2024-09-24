@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contatos</title>
+</head>
+<body>
+    <header>
+        <img src="img/banner.png" alt="banner" title="banner">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+    </header>
+    <main>
+        <section id="contato">
+            <article>
+                <h2>Informações de Contato</h2>
+                <p >Avenida Central, 456, Bairro Jardim</p>
+                <p >São Paulo, SP, 01234-567</p>
+                <p >Email: contato@patasepelos.com</p>
+                <p >Tel: (11) 98765-4321</p>
+            </article>
+        </section>
+        <form action="https://formsubmit.co/sofisaccomano@gmail.com" method="POST" id="login_form">
+            <div id="inputs">
+                <h3>Formulário de contato</h3>
+                <!--nome-->
+                <div id="input_box">
+                    <label for="nome">Nome
+                        <div id="input_field">
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                    </label>
+                </div>
+                <!--email-->
+                <div id="input_box">
+                    <label for="email">E-mail
+                        <div id="input_field">
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </label>
+                </div>
+                <!--msg-->
+                <div id="input_box">
+                    <label for="msg">Mensagem
+                        <div id="input_field">
+                            <textarea name="msg" id="msg" required></textarea>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <!--botão de login-->
+            <button type="submit" id="login_button">Enviar</button>
+        </form>
+    
+    </main>
+    <footer>Site desenvolvido pela Empresa Patas&Pelos</footer>
+</body>
+</html>

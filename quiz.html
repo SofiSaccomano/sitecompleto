@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/banner.png" alt="banner" title="banner">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+    </header>
+    <section class="quiz-section">
+        <h2>Quiz</h2>
+        <form id="quiz-form">
+            <section class="question">
+                <h3>1.Qual é a expectativa de vida média de um gato doméstico?</h3>
+                <label><input type="radio" name="q1" value="A" onclick="disableOptions('q1'), playSound()">A)5-10 anos</label><br>
+                <label><input type="radio" name="q1" value="B" onclick="disableOptions('q1'), playSound()">B)10-15 anos</label><br>
+                <label><input type="radio" name="q1" value="C" onclick="disableOptions('q1'), playSound()">C)15-20 anos</label><br>
+                <label><input type="radio" name="q1" value="D" onclick="disableOptions('q1'), playSound()">D)20-25</label><br>
+            </section>
+            <section class="question">
+                <h3>2.Qual desses alimentos é tóxico para cães?</h3>
+                <label><input type="radio" name="q2" value="A" onclick="disableOptions('q2'), playSound()">A)Frango</label><br>
+                <label><input type="radio" name="q2" value="B" onclick="disableOptions('q2'), playSound()">B)Chocolate</label><br>
+                <label><input type="radio" name="q2" value="C" onclick="disableOptions('q2'), playSound()">C)Arroz</label><br>
+                <label><input type="radio" name="q2" value="D" onclick="disableOptions('q2'), playSound()">D)Maçã</label><br>
+            </section>
+            <section class="question">
+                <h3>3.Quantas horas, em média, um gato dorme por dia?</h3>
+                <label><input type="radio" name="q3" value="A" onclick="disableOptions('q3'), playSound()">A)8 horas</label><br>
+                <label><input type="radio" name="q3" value="B" onclick="disableOptions('q3'), playSound()">B)12 horas</label><br>
+                <label><input type="radio" name="q3" value="C" onclick="disableOptions('q3'), playSound()">C)15 horas</label><br>
+                <label><input type="radio" name="q3" value="D" onclick="disableOptions('q3'), playSound()">D)20 horas</label><br>
+            </section>
+            <section class="question">
+                <h3>4.Qual é a raça de cachorro mais popular no Brasil?</h3>
+                <label><input type="radio" name="q4" value="A" onclick="disableOptions('q4'), playSound()">A)Labrador</label><br>
+                <label><input type="radio" name="q4" value="B" onclick="disableOptions('q4'), playSound()">B)Poodle</label><br>
+                <label><input type="radio" name="q4" value="C" onclick="disableOptions('q4'), playSound()">C)Shih Tzu</label><br>
+                <label><input type="radio" name="q4" value="D" onclick="disableOptions('q4'), playSound()">D)Border Collie</label><br>
+            </section>
+            <section class="question">
+                <h3>5.Qual é o principal sentido que os gatos usam para se orientar?</h3>
+                <label><input type="radio" name="q5" value="A" onclick="disableOptions('q5'), playSound()">A)Visão</label><br>
+                <label><input type="radio" name="q5" value="B" onclick="disableOptions('q5'), playSound()">B)Audição</label><br>
+                <label><input type="radio" name="q5" value="C" onclick="disableOptions('q5'), playSound()">C)Olfato</label><br>
+                <label><input type="radio" name="q5" value="D" onclick="disableOptions('q5'), playSound()">D)Paladar</label><br>
+            </section>
+            <section class="question">
+                <h3>6.Qual desses brinquedos é mais indicado para manter os cães ativos?</h3>
+                <label><input type="radio" name="q6" value="A" onclick="disableOptions('q6'), playSound()">A)Bolas</label><br>
+                <label><input type="radio" name="q6" value="B" onclick="disableOptions('q6'), playSound()">B)Almofadas</label><br>
+                <label><input type="radio" name="q6" value="C" onclick="disableOptions('q6'), playSound()">C)Camas</label><br>
+                <label><input type="radio" name="q6" value="D" onclick="disableOptions('q6'), playSound()">D)Ossos</label><br>
+            </section>
+            <section class="question">
+                <h3>7.Qual é a importância da ração específica para cada fase da vida do pet?</h3>
+                <label><input type="radio" name="q7" value="A" onclick="disableOptions('q7'), playSound()">A)Não é importante</label><br>
+                <label><input type="radio" name="q7" value="B" onclick="disableOptions('q7'), playSound()">B)Garante nutrientes adequados</label><br>
+                <label><input type="radio" name="q7" value="C" onclick="disableOptions('q7'), playSound()">C)Apenas por questão de gosto</label><br>
+                <label><input type="radio" name="q7" value="D" onclick="disableOptions('q7'), playSound()">D)É apenas uma forma de marketing das empresas</label><br>    
+            </section>
+            <section class="question">
+                <h3>8.Qual é a característica que diferencia os gatos dos cães em termos de comportamento?</h3>
+                <label><input type="radio" name="q8" value="A" onclick="disableOptions('q8'), playSound()">A)Os gatos são mais sociáveis.  </label><br>
+                <label><input type="radio" name="q8" value="B" onclick="disableOptions('q8'), playSound()">B) Os cães são mais independentes.</label><br>
+                <label><input type="radio" name="q8" value="C" onclick="disableOptions('q8'), playSound()">C)Os gatos têm um instinto de caça mais forte.</label><br>
+                <label><input type="radio" name="q8" value="D" onclick="disableOptions('q8'), playSound()">D)Os cães são mais silenciosos.</label><br>
+            </section>
+            <section class="question">
+                <h3>9.Qual é o nome da condição em que um gato pode ter dificuldade em se adaptar a mudanças no ambiente?</h3>
+                <label><input type="radio" name="q9" value="A" onclick="disableOptions('q9'), playSound()">A)Estresse felino </label><br>
+                <label><input type="radio" name="q9" value="B" onclick="disableOptions('q9'), playSound()">B)Ansiedade canina</label><br>
+                <label><input type="radio" name="q9" value="C" onclick="disableOptions('q9'), playSound()">C)Depressão animal</label><br>
+                <label><input type="radio" name="q9" value="D" onclick="disableOptions('q9'), playSound()">D)Comportamento territorial </label><br>
+            </section>
+            <section class="question">
+                <h3>10.Qual raça de cão é conhecida por sua lealdade é frequentemente utilizada em trabalhos de busca e resgate?</h3>
+                <label><input type="radio" name="q10" value="A" onclick="disableOptions('q10'), playSound()">A)Chihuahua</label><br>
+                <label><input type="radio" name="q10" value="B" onclick="disableOptions('q10'), playSound()">B)Rottweiler  </label><br>
+                <label><input type="radio" name="q10" value="C" onclick="disableOptions('q10'), playSound()">C)Golden Retriever </label><br>
+                <label><input type="radio" name="q10" value="D" onclick="disableOptions('q10'), playSound()">D)Shih Tzu </label><br>
+            </section>
+           
+            <button id="enviarBtn" type="button" onclick="submitQuiz()">Enviar Respostas</button>
+            <button id="resetBtn" type="button" onclick="resetQuiz()" disabled >Jogar Novamente</button>
+        </form>
+        <audio id="venceusom" src="som/venceu.mp3" preload="auto"></audio>
+        <audio id="selecionasom" src="som/seleciona.mp3" preload="auto"></audio>
+        <audio id="perdeusom" src="som/perdeu.mp3"preload="auto"></audio>
+        <section id="result"></section>
+    </section>
+    <script src="script.js"></script>
+    
+    <footer>Site desenvolvido pela Empresa Patas&Pelos</footer>
+
+</body>
+</html>
