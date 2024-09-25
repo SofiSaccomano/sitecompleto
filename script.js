@@ -45,10 +45,10 @@ function submitQuiz(){
     }
     
     let result = document.getElementById('result');
-    result.innerHTML = `Você acertou ${score} de 7 perguntas`;
+    result.innerHTML = `Você acertou ${score} de 10 perguntas`;
     
     //tocar o som se todas as respostas estiverem corretas
-    if(score === 7){
+    if(score === 10){
         let sucessSound = document.getElementById('venceusom');
         sucessSound.play();
     }
